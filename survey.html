@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Survey</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Survey</h1>
+    <form id="formOne">
+      <div class="form-group">
+        <label for="name">Your Name:</label>
+        <input id="name" class="form-control" type="text">
+      </div>
+    
+      <h2>Your Favorite Food:</h2>
+      <select class="form-group" id="favoriteFood">
+        <option value="pizza">Pizza</option>
+        <option value="burgers">Burgers</option>
+        <option value="hotdogs">Hotdogs</option>
+        <option value="salad">Salad</option>
+      </select>
+    
+      <h2>Your Favorite Music Genree:</h2>
+      <div class="radio">
+        <label>
+          <input type="radio" name="music" value="rocknroll" checked>
+          RockNRoll
+        </label>
+      </div>
+
+      <div class="radio">
+        <label>
+          <input type="radio" name="music" value="country" checked>
+          Country
+        </label>
+      </div>
+
+      <div class="radio">
+        <label>
+          <input type="radio" name="music" value="Hiphop" checked>
+          Hiphop
+        </label>
+      </div>
+
+      <div class="radio">
+        <label>
+          <input type="radio" name="music" value="Electronic" checked>
+          Electronic
+        </label>
+      </div>
+    
+      <h2>Your Date of Birth:</h2>
+      <div class="from-group">
+        <label for="born">Date of birth</label>
+        <input id="born" class="form-control" type="date">
+      </div>
+
+      <button type="submit" class="btn">Submit survey!</button>
+    </form>
+  </div>
+
+  <div class="container">
+  <div id="survey">
+    <h1>Here's your survey:</h1>
+    <p>
+      Looks like <span class="name"></span>, loves eating <span class="favoriteFood"></span> out of any types of foods to pick from. You like to listen and get down to <span class="music"></span> music seeming you don't care who's watching. You were born on <span class="born"></span>.
+    </p>
+  </div>  
+</body>
